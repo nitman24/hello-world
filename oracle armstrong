@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	//code
+	int i,t,j,s,k;
+	cin>>t;
+	while(t--){
+	    cin>>i;
+	    k=i;
+	    s=0;
+	    while(i>0){
+	        j=i%10;
+	        s=s+j*j*j;
+	        i=i/10;
+	    }
+	    if(k==s){
+	        cout<<"Yes"<<endl;
+	        break;
+	    }
+	    else
+	    cout<<"No"<<endl;
+	    break;
+	}
+	return 0;
+}
